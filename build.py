@@ -10,3 +10,6 @@
 __author__        = ['"Prabhat Kumar" <prabhat.genome@gmail.com>']
 __license__       = 'Apache License'
 __date__          = '18-11-2016'
+__copyright__     = "Copyright © 2006 - 2016, Prabhat Kumar. All rights reserved."
+__webserver__     = "http://prabhatkumar.org/"
+__license__       = "http://prabhatkumar.org/legal/license.txt"
