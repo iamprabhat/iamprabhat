@@ -44,3 +44,10 @@ var path        = require('path');
 var chalk       = require('chalk');
 var inquirer    = require('inquirer');
 var semver      = require('semver');
+
+// Default color defined.
+///----------------------
+var noop        = chalk.red;
+var yeep        = chalk.green;
+var okay        = chalk.blue;
+var boop        = chalk.gray;
