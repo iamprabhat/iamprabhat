@@ -24,3 +24,4 @@ output_path       = 'core/source/compiled/trianglify.js'
 import os
 import sys
 import re
+import time
