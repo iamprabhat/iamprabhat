@@ -123,3 +123,10 @@ def monitor():
             a = b
             create()
             build()
+
+# Now, __main__ module.
+if __name__ == '__main__':
+    create()
+    build()
+    if 'debug' in sys.argv:
+        monitor()
