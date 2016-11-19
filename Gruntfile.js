@@ -42,3 +42,4 @@ var path        = require('path');
 // To load required NPM modules.
 ///-----------------------------
 var chalk       = require('chalk');
+var inquirer    = require('inquirer');
