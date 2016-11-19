@@ -54,3 +54,7 @@ header ='''/*!
  * ___________________________________________________________________________
  */
 '''
+
+def sources():
+    return [os.path.join(base, f) for base, folders, files in \
+        os.walk(input_path) for f in files if f.endswith('.js')]
