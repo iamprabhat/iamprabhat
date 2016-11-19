@@ -19,3 +19,6 @@ module            = 'trianglify'
 input_path        = 'core/source/engine'
 output_path       = 'core/source/compiled/trianglify.js'
 # ————————————————————————————————————————————————————————————————————————————
+
+# Load required modules.
+import os
