@@ -27,3 +27,8 @@
  * --/The Heart of Build System/-- of "iamprabhat®".
  * ___________________________________________________________________________
  */
+
+
+// Invoking strict mode.
+///@purpose: Strict mode applies to entire scripts or to individual functions.
+"use strict";
