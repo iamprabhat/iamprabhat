@@ -58,3 +58,6 @@ header ='''/*!
 def sources():
     return [os.path.join(base, f) for base, folders, files in \
         os.walk(input_path) for f in files if f.endswith('.js')]
+
+def compile(sources):
+    return '\n'.join('// %s\n%s' % (path, open(path).read()) for path in sources)
