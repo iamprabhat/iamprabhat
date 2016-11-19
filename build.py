@@ -26,3 +26,5 @@ import sys
 import re
 import time
 import tempfile
+
+from termcolor import colored
