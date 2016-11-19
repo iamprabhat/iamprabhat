@@ -23,3 +23,4 @@ output_path       = 'core/source/compiled/trianglify.js'
 # Load required modules.
 import os
 import sys
+import re
