@@ -62,3 +62,37 @@ var build = {
   "year"      : "2015",
   "audience"  : "for all scientist."
 };
+
+///-------------------------
+// A smart license function.
+///------- Apache ----------
+var license = [
+'/*!                                                                                                  ',
+' * iamprabhat®® — %(version)s                                                                        ',
+' * From the Desk of Prabhat Kumar — CEO, Founder & Scientist.                                        ',
+' * ---------------------------------------------------------------------------                       ',
+' * Copyright © 2008 - ' + new Date().getFullYear() + ', Prabhat Kumar, All rights reserved.          ',
+' * ---------------------------------------------------------------------------                       ',
+' * Copyright © 2014 - ' + new Date().getFullYear() + ', Sequømics Research, All rights reserved.     ',
+' * Copyright © 2014 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.  ',
+' * ---------------------------------------------------------------------------                       ',
+' * HomePage: http://prabhatkumar.org/ or https://iamprabhatkumar.wordpress.com/                      ',
+' * ---------------------------------------------------------------------------                       ',
+' * Available via the Apache, version 2.0. [http://www.apache.org/licenses/]                          ',
+' * See: https://github.com/iamprabhat/iamprabhat — for details.                                      ',
+' * ---------------------------------------------------------------------------                       ',
+' */                                                                                                  ',
+'\n',
+'/*!                                                                                                  ',
+' * Build System — ' + build.system + ':' + build.name + ' — ' + '%(version)s' + ' — '+ build.audience ,
+' * ---------------------------------------------------------------------------                       ',
+' * Copyright © 2015 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.  ',
+' * Available via the Apache, version 2.0. [http://www.apache.org/licenses/]                          ',
+' * ---------------------------------------------------------------------------                       ',
+' * See: http://seed.sequomics.com/ — for details.                                                    ',
+' * ---------------------------------------------------------------------------                       ',
+' */                                                                                                  ',
+'\n',
+].map(function(s) {
+  return s.replace(/\s+$/, '');
+}).join("\n");
