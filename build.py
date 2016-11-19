@@ -113,3 +113,13 @@ def build():
 def stat():
     # it will show — statistics of build file.
     return [os.stat(file).st_mtime for file in sources()]
+
+def monitor():
+    a = stat()
+    while True:
+        time.sleep(0.5)
+        b = stat()
+        if a != b:
+            a = b
+            create()
+            build()
