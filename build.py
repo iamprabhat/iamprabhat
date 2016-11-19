@@ -61,3 +61,17 @@ def sources():
 
 def compile(sources):
     return '\n'.join('// %s\n%s' % (path, open(path).read()) for path in sources)
+
+def compressSEED(text):
+    def compress(match):
+        text = match.group(0)
+        if '  ' in text: # assume all strings with two consecutive spaces.
+            text = re.sub('/\*.*?\*/', '', text) # remove all comments.
+            text = re.sub(' +', ' ', text) # replace consecutive spaces with one space.
+            text = re.sub(r' ?(\+|\-|\*|/|,|=|{|}|;|\(|\)|<|>|!|\'|\") ?', r'\1', text) # tighten spaces around some tokens.
+        return text
+
+    text = re.sub(r"('([^'\\]|\\(.|\n))*'|\"([^\"\\]|\\(.|\n))*\")", compress, text) # replace all strings.
+    return text
+
+# Now, build(), stat(), and monitor() — will do all build(s) work.
