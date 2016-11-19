@@ -96,3 +96,10 @@ var license = [
 ].map(function(s) {
   return s.replace(/\s+$/, '');
 }).join("\n");
+
+///--------------------------
+// A citation of iamprabhat®.
+///--------------------------
+var cite = JSON.parse(fs.readFileSync('citation.json', {
+  encoding: "utf8"
+}));
