@@ -109,3 +109,7 @@ def build():
     print os.path.split('core/source/compiled/trianglify.js')
     print colored('built —>', 'green'), '%s (%u lines).' % (output_path, len(data.split('\n')))
     print colored('———————————————————————————————————————————————————', 'green')
+
+def stat():
+    # it will show — statistics of build file.
+    return [os.stat(file).st_mtime for file in sources()]
