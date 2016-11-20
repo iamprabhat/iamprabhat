@@ -128,3 +128,5 @@ var docsPath    = './docs/';
 var libsPath    = './libs/';
 // A destination directory.
 var buildPath   = './build/';
+
+var message     = "SEED™ — Supported under Mac OS X and Linux only!";
