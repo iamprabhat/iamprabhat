@@ -145,3 +145,12 @@ var banner      =
     ' * Copyright © 2014 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.\n' +
     ' * Released under the Apache License (http://www.apache.org/licenses/).\n' +
     ' */';
+
+// An object with no properties.
+var replaceHandlers = {};
+
+// A function to register `ReplaceHandler`.
+///----------------------------------------
+function registerReplaceHandler(keyword, handler) {
+  replaceHandlers[keyword] = handler;
+}
