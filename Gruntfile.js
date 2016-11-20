@@ -100,6 +100,12 @@ var license = [
 ///--------------------------
 // A citation of iamprabhat®.
 ///--------------------------
-var cite = JSON.parse(fs.readFileSync('citation.json', {
+var cite = JSON.parse(fs.readFileSync('./citation.json', {
+  encoding: "utf8"
+}));
+
+// To get asset(s) information.
+///----------------------------
+var bkg  = JSON.parse(fs.readFileSync('./bower.json', {
   encoding: "utf8"
 }));
