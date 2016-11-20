@@ -123,3 +123,4 @@ var ftp  = JSON.parse(fs.readFileSync('./secret.json', {
 // Global variables.
 //=~~~~~~~~~~~~~~~~~
 var rootPath    = './';
+var appsPath    = './app/';
