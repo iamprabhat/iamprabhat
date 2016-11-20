@@ -130,3 +130,6 @@ var libsPath    = './libs/';
 var buildPath   = './build/';
 
 var message     = "SEED™ — Supported under Mac OS X and Linux only!";
+
+// To get 'version', i.e. required to work on SEED™: Grunt based build system.
+var version     = pkg.version;
