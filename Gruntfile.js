@@ -133,3 +133,15 @@ var message     = "SEED™ — Supported under Mac OS X and Linux only!";
 
 // To get 'version', i.e. required to work on SEED™: Grunt based build system.
 var version     = pkg.version;
+
+// ----------------------------------------------------------------------------------------------------------
+var banner      =
+    '/*!\n' +
+    ' * ————————————\n' +
+    ' * iamprabhat®: v' + version + '\n' +
+    ' * ————————————\n' +
+    ' * From the Desk of Prabhat Kumar — CEO, Founder & Scientist.\n' +
+    ' * Copyright © 2008 - ' + new Date().getFullYear() + ', Prabhat Kumar, All rights reserved.\n' +
+    ' * Copyright © 2014 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.\n' +
+    ' * Released under the Apache License (http://www.apache.org/licenses/).\n' +
+    ' */';
