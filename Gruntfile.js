@@ -119,3 +119,7 @@ var pkg  = JSON.parse(fs.readFileSync('./package.json', {
 var ftp  = JSON.parse(fs.readFileSync('./secret.json', {
   encoding: "utf8"
 }));
+
+// Global variables.
+//=~~~~~~~~~~~~~~~~~
+var rootPath    = './';
