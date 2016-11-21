@@ -271,3 +271,6 @@ module.exports = function(grunt) {
   RegExp.quote = function(string) {
     return string.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
   };
+  
+  // Date objects.
+  var today    = new Date();
