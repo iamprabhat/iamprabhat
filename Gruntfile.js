@@ -340,7 +340,7 @@ module.exports = function(grunt) {
     
     /* reading 'secret.json'
                 -----------
-    for FTP updates, mainly. */
+       for FTP updates, mainly. */
     /* Note: Do not store credentials in the git repo, store them separately and read from a secret file. */
     secret: ftp,
     
@@ -357,3 +357,20 @@ module.exports = function(grunt) {
         duration: 4 // the duration of notification in seconds, for `notify-send only.
       }
     },
+    // ———————————————————————————————————————————————————————————————————————————|
+    // Primary Task(s) for SEED™ — Umeå — Building System ||                      |
+    // -----------------------------------------------------                      |
+    // 01. Asset(s) Preparation                                                   |
+    // 02. Build Asset(s) Verification                                            |
+    // -‡-----------------------------------------------------------------------‡-|
+    // 03. Assembly of Application                                                |
+    // 04. Build of Sass using Compass and Lint                                   |
+    // 05. Linting of (CSS + JavaScript)                                          |
+    // 06. Concatenation of (CSS + JavaScript)                                    |
+    // 07. Minification of (CSS + JavaScript)                                     |
+    // 08. Data Build + Lint                                                      |
+    // 09. Cleaning of temporary files or directories                             |
+    // 10. Localhost Server + Watch                                               |
+    // -‡-----------------------------------------------------------------------‡-|
+    // ->     https://github.com/iamprabhat/iamprabhat/blob/master/BUILDING.md    |
+    // ———————————————————————————————————————————————————————————————————————————|
