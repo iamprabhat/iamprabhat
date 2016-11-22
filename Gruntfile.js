@@ -299,3 +299,8 @@ module.exports = function(grunt) {
   // To generate data of Project(s) and Publication(s).
   // ./core/source/data/raw/ ——> ./core/source/data/gold/
   var generateData = require('./core/source/data/datagenerator.js');
+  
+  // A configuration bridge.
+  var configBridge = grunt.file.readJSON('./grunt/configBridge.json', {
+    encoding: 'utf8'
+  });
