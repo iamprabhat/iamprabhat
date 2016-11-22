@@ -295,3 +295,7 @@ module.exports = function(grunt) {
   ]);
   // To write process log(s).
   var contents = null;
+  
+  // To generate data of Project(s) and Publication(s).
+  // ./core/source/data/raw/ ——> ./core/source/data/gold/
+  var generateData = require('./core/source/data/datagenerator.js');
