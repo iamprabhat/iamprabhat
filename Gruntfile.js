@@ -374,3 +374,27 @@ module.exports = function(grunt) {
     // -‡-----------------------------------------------------------------------‡-|
     // ->     https://github.com/iamprabhat/iamprabhat/blob/master/BUILDING.md    |
     // ———————————————————————————————————————————————————————————————————————————|
+    // Task configuration.
+    // -----------------------
+    // 1. Asset(s) Preparation
+    // -----------------------
+    // Bower Components Installation
+    'bower-install-simple': {
+      options: {
+        color: true,
+        command: 'update',
+        interactive: true,
+        forceLatest: false,
+        directory: __dirname + '/core/source/libs/' // library i.e, downloaded by Bower.
+      },
+      'prod': {
+        options: {
+          production: true // Install project Dependencies.
+        }
+      },
+      'dev': {
+        options: {
+          production: false // Install project devDependencies.
+        }
+      }
+    },
