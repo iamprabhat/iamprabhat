@@ -323,3 +323,8 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt, {
     scope: ['devDependencies', 'dependencies']
   });
+  
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // Project configuration for -//iamprabhat®//- |------------------------------| 22/Nov/2016 | SEED™ — Umeå.
+  //                      Copyright © 2008 - 2016, Prabhat Kumar, All rights reserved.
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
