@@ -337,3 +337,9 @@ module.exports = function(grunt) {
                 ------------
        for sync package(s) updates, mainly. */
     pkg: pkg,
+    
+    /* reading 'secret.json'
+                -----------
+    for FTP updates, mainly. */
+    /* Note: Do not store credentials in the git repo, store them separately and read from a secret file. */
+    secret: ftp,
