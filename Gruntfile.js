@@ -281,3 +281,9 @@ module.exports = function(grunt) {
   var mode     = '0777';
   /// -->> A file globbing pattern.
   var pattern  = '**/*.js';
+  // Exclude: remove from consideration.
+  // grunt.file.expand([options, ] patterns)
+  var excludes = grunt.file.expand([
+    '!/libs/assembly/assembly.js',
+    '!/libs/assembly/convert.js'
+  ]);
