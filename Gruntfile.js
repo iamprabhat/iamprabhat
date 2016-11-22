@@ -316,3 +316,10 @@ module.exports = function(grunt) {
   // -----------------------------------------------------
   // Display the elapsed execution time of grunt tasks.
   require('time-grunt')(grunt);
+  
+  // 2. load-grunt-tasks ——> $ npm install load-grunt-tasks --save-dev
+  // -----------------------------------------------------------------
+  // Load multiple grunt tasks using globbing patterns.
+  require('load-grunt-tasks')(grunt, {
+    scope: ['devDependencies', 'dependencies']
+  });
