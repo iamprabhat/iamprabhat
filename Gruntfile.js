@@ -343,3 +343,6 @@ module.exports = function(grunt) {
     for FTP updates, mainly. */
     /* Note: Do not store credentials in the git repo, store them separately and read from a secret file. */
     secret: ftp,
+    
+    /* To get banner information. */
+    banner: banner,
