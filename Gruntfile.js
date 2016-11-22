@@ -332,3 +332,8 @@ module.exports = function(grunt) {
   // Grunt Project Configuration.
   // ----------------------------
   grunt.initConfig({
+    
+    /* reading 'package.json'
+                ------------
+       for sync package(s) updates, mainly. */
+    pkg: pkg,
