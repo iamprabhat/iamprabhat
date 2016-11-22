@@ -287,3 +287,9 @@ module.exports = function(grunt) {
     '!/libs/assembly/assembly.js',
     '!/libs/assembly/convert.js'
   ]);
+  // Includes: make part of a whole or set.
+  // grunt.file.expand([options, ] patterns)
+  var includes = grunt.file.expand([
+    __dirname + '/core/source/script/' + pattern,
+    __dirname + '/core/source/engine/' + pattern
+  ]);
