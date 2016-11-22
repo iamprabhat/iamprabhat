@@ -346,3 +346,14 @@ module.exports = function(grunt) {
     
     /* To get banner information. */
     banner: banner,
+    
+    /* grunt-notify --> $ npm install grunt-notify --save-dev */
+    notify_hooks: {
+      options: {
+        enabled: true,
+        max_jshint_notifications: 5, // maximum number of notifications from [jshint] output.
+        title: "I'm Prabhat", // defaults to the name in [package.json].
+        success: false, // whether successful grunt executions should be notified automatically.
+        duration: 4 // the duration of notification in seconds, for `notify-send only.
+      }
+    },
