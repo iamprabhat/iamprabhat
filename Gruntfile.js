@@ -424,3 +424,27 @@ module.exports = function(grunt) {
         }
       }
     },
+    // -------------------------------------------
+    /// 3. Assembly of Application + Documentation
+    // -------------------------------------------
+    /// 3. Assembly --> 3.1 HTML Hint
+    /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    htmlhint: {
+      options: {
+        htmlhintrc: './grunt/config/rules/.htmlhintrc'
+      },
+      html1: {
+        options: {
+          'attr-lowercase': false
+        },
+        /// Application
+        src: ['./app/*.html', './app/en/**/*.html']
+      },
+      html2: {
+        options: {
+          'attr-lowercase': true
+        },
+        /// Documentation + Repositories
+        src: ['./docs/source/*.html', './docs/source/repo/**/*.html']
+      }
+    },
