@@ -471,3 +471,28 @@ module.exports = function(grunt) {
         ]
       }
     },
+    // -------------------------------
+    /// 4. Build of Sass using Compass
+    // -------------------------------
+    /// 4. Sass Build --> 4.1 Compass
+    /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    compass: {
+      /// T:1 [cacheDir: .sass-cache]
+      dist: {
+        options: {
+          config: './config.rb',
+          environment: 'production',
+          raw: 'preferred_syntax = :sass\n' // Use `raw` since it's not directly available.
+        }
+      },
+      /// T:2
+      dev: {
+        options: {
+          assetCacheBuster: true,
+          fontsPath: './core/source/font',
+          sassDir: './core/source/scss',
+          cssDir: './app/en/assets/style',
+          sourcemap: true
+        }
+      }
+    },
