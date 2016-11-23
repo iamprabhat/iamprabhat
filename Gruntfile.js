@@ -398,3 +398,29 @@ module.exports = function(grunt) {
         }
       }
     },
+    // ------------------------------
+    // 2. Build Asset(s) Verification
+    // ------------------------------
+    // Bower Components Syncing
+    bowersync: {
+      taskName: {
+        files: {
+          // Target directory  : Source directory
+          './core/source/libs/': './bower_components'
+        },
+        options: {
+          // The path to the file. Default: 'bower.json'.
+          bowerFile: bkg, // alias --> './bower.json',
+          // Use when copying `dependencies` section. Default: true.
+          dependencies: true,
+          // Use when copying `devDpendencies` section. Default: false.
+          devDependencies: true,
+          // Use when copying `peerDependencies` section. Default: false.
+          peerDependencies: false,
+          // Remove all files from dest that are not found in src. Default: true.
+          updateAndDelete: true,
+          // Create symlinks to dependencies, instead of copying them. Default: false.
+          symlink: true
+        }
+      }
+    },
