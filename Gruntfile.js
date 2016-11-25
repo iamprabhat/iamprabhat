@@ -496,3 +496,15 @@ module.exports = function(grunt) {
         }
       }
     },
+    /// 4. Sass Build --> 4.2 Scss Lint
+    /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    scsslint: {
+      options: {
+        bundleExec: true,
+        config: './core/source/scss/.scss-lint.yml',
+        reporterOutput: null
+      },
+      core: {
+        src: ['./core/source/scss/**/*.scss', '!./core/source/scss/**/_normalize.scss']
+      }
+    },
