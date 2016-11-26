@@ -508,3 +508,27 @@ module.exports = function(grunt) {
         src: ['./core/source/scss/**/*.scss', '!./core/source/scss/**/_normalize.scss']
       }
     },
+    // ---------------------------------
+    /// 5. Linting of (CSS + JavaScript)
+    // ---------------------------------
+    /// 5. CSS --> 5.1 Lint
+    /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    csslint: {
+      options: {
+        csslintrc: './grunt/config/rules/.csslintrc'
+      },
+      strict: {
+        options: {
+          import: 2
+        },
+        src: ['./core/source/style/**/*.css']
+      },
+      lax: {
+        options: {
+          import: false
+        },
+        src: ['./app/en/assets/style/**/*.css']
+      }
+    },
+    // To update '.csslintrc' list, run this:
+    // node -e "require('csslint').CSSLint.getRules().forEach(function(x) { console.log(x.id) })"
