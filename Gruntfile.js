@@ -532,3 +532,35 @@ module.exports = function(grunt) {
     },
     // To update '.csslintrc' list, run this:
     // node -e "require('csslint').CSSLint.getRules().forEach(function(x) { console.log(x.id) })"
+    // 5. JavaScript --> 5.2 Lint
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    jshint: {
+      options: {
+        curly: true,
+        eqeqeq: true,
+        eqnull: true,
+        browser: true,
+        globals: {
+          d3: true,
+          Modernizr: true,
+          jQuery: true
+        },
+        strict: true,
+      },
+      ignore_warning: {
+        options: {
+          '-W015': true // [L24:C9] W015: Expected '}' to have an indentation at 11 instead at 9.
+        }
+      },
+      all: [
+        './Gruntfile.js',
+        './grunt/**/*.js',
+        './libs/**/*.js',
+        './core/source/data/*.js',
+        './core/source/engine/**/*.js',
+        './core/source/script/root.js',
+        './core/source/script/**/*.js',
+        '!node_modules/**/*.js', // ignores node_modules.
+        '!bower_components/**/*.js' // ignores bower_components.
+      ]
+    },
