@@ -532,8 +532,8 @@ module.exports = function(grunt) {
     },
     // To update '.csslintrc' list, run this:
     // node -e "require('csslint').CSSLint.getRules().forEach(function(x) { console.log(x.id) })"
-    // 5. JavaScript --> 5.2 Lint
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /// 5. JavaScript --> 5.2 Lint
+    /// ~~~~~~~~~~~~~~~~~~~~~~~~~~
     jshint: {
       options: {
         curly: true,
@@ -546,6 +546,7 @@ module.exports = function(grunt) {
           jQuery: true
         },
         strict: true,
+        undef: true
       },
       ignore_warning: {
         options: {
