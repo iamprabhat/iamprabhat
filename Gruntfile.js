@@ -550,6 +550,7 @@ module.exports = function(grunt) {
       },
       ignore_warning: {
         options: {
+          '-W069': true, // for dot notation.
           '-W015': true // [L24:C9] W015: Expected '}' to have an indentation at 11 instead at 9.
         }
       },
